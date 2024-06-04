@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    
+    <main id="main">
+        <form id="userinput">
+            <h1>Enter Your Details</h1>
+            <div id="inpts">
+                <div id="uid">
+                    <input type="number" required placeholder="Id*">
+                </div>
+                <input type="text" required placeholder="Name*">
+                <input type="number" required placeholder="Age*">
+            </div>
+
+            <div id="btns">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+
+        <div id="userdetalis">
+            <h1>Details</h1>
+            <button id="close">X</button>
+            <form id="updateform">
+                <input class="upinpt" type="text" placeholder="New Name">
+                <input class="upinpt" type="number" placeholder="New Age">
+                <div id="updateformbtns">
+                    <button type="submit">save</button>
+                    <button type="reset">cancel</button>
+                </div>
+            </form>
+            <div id="showdetalis">
+                
+            </div>
+            <div id="showbtns">
+                <button id="updatedetial">update</button>
+                <button id="deletedetail">delete</button>
+            </div>
+        </div>
+
+        <div id="userlist">
+            <h1>Users</h1>
+            <div id="showusers">
+            
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+<script src="./index.js"></script>
+</html>

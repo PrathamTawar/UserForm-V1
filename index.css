@@ -1,0 +1,436 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: black;
+}
+
+main
+{
+    height: 100vh;
+
+    padding-left: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    background: linear-gradient(rgb(165, 165, 213),rgb(123, 162, 225), rgb(25, 114, 215));
+}
+
+
+/* *==================form================ */
+#userinput
+{
+    border: solid;
+    height: fit-content;
+    min-height: 500px;
+    width: 400px;
+
+    padding: 2rem 0px 2rem 0rem;
+    border-radius: 24px;
+    
+    background-color: rgba(235, 235, 240, 0.108);
+    backdrop-filter: blur(100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4rem;
+
+}
+
+#inpts
+{
+    height: 30%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+#uid
+{
+    width: 100%;
+}
+
+#uid p
+{
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding-left: 1rem;
+
+    color: rgb(255, 0, 0);
+}
+
+#inpts input
+{
+    width: 100%;
+
+    border: none;
+    outline: none;
+    border-radius: 16px;
+
+    background-color: beige;
+
+    padding: 7px 10px;
+    transition: 0.2s;
+}
+
+#inpts input:focus
+{
+    border: 1px solid;
+    transform: scale(1.1);
+}
+
+#btns
+{
+    height: 30%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#btns button
+{
+    width: 40%;
+
+    font-weight: 700;
+
+    color: white;
+    padding: 10px 7px;
+    border: none;
+    border-radius: 16px;
+    transition: 0.2s;
+
+
+    cursor: pointer;
+}
+
+#btns button:hover
+{
+    filter: saturate(70%);
+}
+
+#btns button:active
+{
+    transform: translateY(3px);
+}
+
+#btns button:first-of-type
+{
+    background-color: rgb(9, 142, 238);
+}
+#btns button:last-of-type
+{
+    background-color: rgb(255, 0, 0);
+}
+
+/* !==================form=over=============== */
+
+
+
+
+
+/* *==================userdetalis================ */
+
+#userdetalis
+{
+    border: solid;
+    height: fit-content;
+    min-height: 500px;
+    width: 400px;
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: rgba(235, 235, 240, 0.108);
+    backdrop-filter: blur(100px);
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+
+#showdetalis
+{
+    height: 50%;
+    width: fit-content;
+    min-width: 70%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+#close
+{
+    font-weight: 700;
+    border: none;
+    padding: .4rem 1.4rem;
+    position: absolute;
+    top:0;
+    right: 0;
+    border-bottom-left-radius: 24px;
+    background-color: rgba(235, 235, 240, 0.607);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#close:hover
+{
+    background-color: rgba(255, 0, 0, 0.607);
+    color: white;
+}
+
+
+#showbtns
+{
+    height: 30%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#showbtns button
+{
+    width: 40%;
+
+    font-weight: 700;
+
+    color: white;
+    padding: 10px 7px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+
+#showbtns button:hover
+{
+    filter: saturate(70%);
+}
+
+#showbtns button:active
+{
+    transform: translateY(3px);
+}
+
+#showbtns button:first-of-type
+{
+    background-color: rgb(9, 142, 238);
+}
+#showbtns button:last-of-type
+{
+    background-color: rgb(255, 0, 0);
+}
+
+.show
+{
+    display: flex !important;
+}
+
+#updateform
+{
+    position: absolute;
+    border: solid;
+    height: 400px;
+    width: 300px;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: rgba(45, 44, 44, 0.922);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    display: none;
+    z-index: 100;
+}
+
+#updateform input
+{
+    width: 100%;
+}
+
+#updateform input
+{
+    width: 100%;
+
+    border: none;
+    outline: none;
+    border-radius: 16px;
+
+    background-color: beige;
+
+    padding: 7px 10px;
+    transition: 0.2s;
+}
+
+#updateform input:focus
+{
+    border: 1px solid;
+    transform: scale(1.1);
+}
+
+#updateformbtns
+{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#updateformbtns button
+{
+    width: 40%;
+
+    font-size: .7rem;
+
+    color: white;
+    padding: 10px 7px;
+    border: none;
+    border-radius: 16px;
+    transition: 0.2s;
+
+
+    cursor: pointer;
+}
+
+#updateformbtns button:hover
+{
+    filter: saturate(70%);
+}
+
+#updateformbtns button:active
+{
+    transform: translateY(3px);
+}
+
+#updateformbtns button:first-of-type
+{
+    background-color: rgb(9, 142, 238);
+}
+#updateformbtns button:last-of-type
+{
+    background-color: rgb(255, 0, 0);
+}
+
+
+
+
+
+/* !==================userdetalis=over=============== */
+
+
+
+
+
+/* *==================userlist================ */
+
+#userlist
+{
+    border-left: solid;
+    height: 100vh;
+    width: 40%;
+    max-width: 300px;
+
+    background-color: rgba(235, 235, 240, 0.108);
+    backdrop-filter: blur(100px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#userlist h1
+{
+    text-align: center;
+    border-bottom: solid black;
+    width: 100%;
+    padding: .5rem 0px;
+
+    color: white;
+    background-color: rgb(9, 142, 238);
+    
+}
+
+#showusers
+{
+    /* border: solid; */
+    height: 100%;
+    width: 100%;
+    padding: 3rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    overflow: auto;
+}
+
+.users
+{
+    /* border: solid; */
+    border-radius: 35px;
+    background-color: rgb(9, 142, 238);
+
+    min-height: 70px;
+    width: 100%;
+
+    padding-left: 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+
+.users span
+{
+    display: flex;
+    padding: 1px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    user-select: none;
+
+}
+
+.users:hover
+{
+    border: solid;
+    transform: scale(1.05);
+}
+
+.user:focus
+{
+    border: solid;
+    transform: scale(1.05);
+}
+
+
+/* !==================userlist=over=============== */
